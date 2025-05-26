@@ -4,8 +4,9 @@ An AI-powered tool that analyzes wallet addresses to generate unique on-chain pe
 
 Issues Faced While Making this AI: 
 Tried to use diffrent models like tinyllama and microsoft phi-2 to generate accurate bio of users from the information got by the wallet address but as my laptop has 8gb RAM and 6GB free space in disk these small models also didn't work.
-I knew distillgpt-2 is not generating good bio's but it is getting all the information about the wallet and the bio's are AI generated and not template based.
-Learned great stuff from working on this project.
+I know distillgpt-2 is not generating good bio's but it is getting all the information about the wallet and the bio's are AI generated and not template based.
+
+Demo Video Link- https://youtu.be/Uwe3WL74VP4
 
 ## Features
 
