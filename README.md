@@ -2,6 +2,11 @@
 
 An AI-powered tool that analyzes wallet addresses to generate unique on-chain persona profiles, combining behavior classification, visualizations, and AI-generated bios.
 
+Issues Faced While Making this AI: 
+Tried to use diffrent models like tinyllama and microsoft phi-2 to generate accurate bio of users from the information got by the wallet address but as my laptop has 8gb RAM and 6GB free space in disk these small models also didn't work.
+I knew distillgpt-2 is not generating good bio's but it is getting all the information about the wallet and the bio's are AI generated and not template based.
+Learned great stuff from working on this project.
+
 ## Features
 
 1. **Wallet Behavior Classifier**
@@ -47,5 +52,6 @@ Create a `.env` file with the following variables:
 ```
 ETHERSCAN_API_KEY=your_etherscan_api_key
 ALCHEMY_API_KEY=your_alchemy_api_key
-COVALENT_API_KEY=your_covalent_api_key
 ```
+
+THANK YOU
