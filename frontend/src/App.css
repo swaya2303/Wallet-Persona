@@ -1,0 +1,194 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  padding: 40px 0;
+}
+
+/* Animated gradient background */
+.hero-section {
+  background: linear-gradient(-45deg, #3a6df0, #6c5ce7, #00cec9, #3a6df0);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: white;
+  padding: 60px 0;
+  text-align: center;
+  border-radius: 0 0 30px 30px;
+  margin-bottom: 40px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 25px;
+  opacity: 0.9;
+}
+
+.wallet-form {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.wallet-input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.85);
+  margin-bottom: 15px;
+}
+
+.wallet-input:focus {
+  outline: none;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.wallet-submit {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #00cec9;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.wallet-submit:hover {
+  background: #00b8b2;
+  transform: translateY(-2px);
+}
+
+/* Profile Cards */
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-info h1 {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+}
+
+.profile-type {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.type-investor {
+  background-color: #a29bfe;
+  color: white;
+}
+
+.type-nft {
+  background-color: #74b9ff;
+  color: white;
+}
+
+.type-dao {
+  background-color: #55efc4;
+  color: white;
+}
+
+.type-degen {
+  background-color: #ff7675;
+  color: white;
+}
+
+.type-dormant {
+  background-color: #b2bec3;
+  color: white;
+}
+
+.score-container {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.score-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.score-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.score-label {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .profile-avatar {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}
